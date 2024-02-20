@@ -18,4 +18,5 @@ let zeroBtn = document.getElementById("zeroBtn");
 let decimalBtn = document.getElementById("decimalBtn");
 let equalsBtn = document.getElementById("equalsBtn");
 
-
+let numOne = 0;
+let numTwo = 0;
