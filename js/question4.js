@@ -1,3 +1,5 @@
+import { addition } from "./addition.js";
+
 let ACBtn = document.getElementById("ACBtn");
 let positiveAndNegativeBtn = document.getElementById("positiveAndNegativeBtn");
 let percentBtn = document.getElementById("percentBtn");
@@ -34,7 +36,7 @@ let positive = true;
 ACBtn.addEventListener('click', () => {
     numOne = "0";
     numTwo = "0";
-    first = true;
+    first = false;
     init = true;
     userInput.value = "0";
     add = false;
@@ -42,6 +44,20 @@ ACBtn.addEventListener('click', () => {
     divide = false;
     multiply = false;
     count = 0;
+})
+
+equalsBtn.addEventListener('click', () => {
+    if(add){
+        userInput.value = addition(numOne, numTwo);
+    }
+    init = true;
+})
+
+additionBtn.addEventListener('click', () => {
+    add = true;
+    userInput.value = "+";
+    first = true;
+    init = true;
 })
 
 positiveAndNegativeBtn.addEventListener('click', () => {
