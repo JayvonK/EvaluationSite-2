@@ -29,6 +29,8 @@ let divide = false;
 let multiply = false;
 let count = 0;
 
+let positive = true;
+
 ACBtn.addEventListener('click', () => {
     numOne = "0";
     numTwo = "0";
@@ -40,6 +42,35 @@ ACBtn.addEventListener('click', () => {
     divide = false;
     multiply = false;
     count = 0;
+})
+
+positiveAndNegativeBtn.addEventListener('click', () => {
+    let negative = ["-"];
+    if (positive) {
+        positive = false;
+        if (!first) {
+            for (let i = 0; i < numOne.length; i++) {
+                negative.push(numOne[i]);
+            }
+            numOne = negative.join("");
+            userInput.value = numOne;
+        } else {
+            for (let i = 0; i < numTwo.length; i++) {
+                negative.push(numTwo[i]);
+            }
+            numTwo = negative.join("");
+            userInput.value = numTwo;
+        }
+    } else {
+        positive = true;
+        if (!first) {
+            numOne = numOne.replace("-", "");
+            userInput.value = numOne;
+        } else {
+            numTwo = numTwo.replace("-", "");
+            userInput.value = numTwo;
+        }
+    }
 })
 
 
@@ -267,7 +298,7 @@ zeroBtn.addEventListener('click', () => {
 
 decimalBtn.addEventListener('click', () => {
     if (count < 1) {
-        if(!first){
+        if (!first) {
             numOne += ".";
             userInput.value = numOne;
         } else {
