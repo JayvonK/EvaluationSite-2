@@ -17,7 +17,28 @@ let additionBtn = document.getElementById("additionBtn");
 let zeroBtn = document.getElementById("zeroBtn");
 let decimalBtn = document.getElementById("decimalBtn");
 let equalsBtn = document.getElementById("equalsBtn");
-let userInput = document.getElementById("userInput")
+let userInput = document.getElementById("userInput");
 
 let numOne = 0;
 let numTwo = 0;
+let first = false;
+
+ACBtn.addEventListener('click', () => {
+    numOne = 0;
+    numTwo = 0;
+    first = true;
+    userInput.value = 0;
+    
+})
+
+oneBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 1;
+        userInput.value = 1;
+        first = true;
+    } else {
+        numTwo = 1;
+        userInput.value = 1;
+        first = false;
+    }
+})
