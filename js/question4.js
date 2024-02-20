@@ -1,4 +1,7 @@
 import { addition } from "./addition.js";
+import { division } from "./division.js";
+import { subtraction } from "./subtraction.js";
+import { multiplication } from "./multiplication.js";
 
 let ACBtn = document.getElementById("ACBtn");
 let positiveAndNegativeBtn = document.getElementById("positiveAndNegativeBtn");
@@ -47,9 +50,45 @@ ACBtn.addEventListener('click', () => {
 })
 
 equalsBtn.addEventListener('click', () => {
-    if(add){
+    if (add) {
         userInput.value = addition(numOne, numTwo);
+        numOne = addition(numOne, numTwo).toString();
+    } else if (divide) {
+        userInput.value = division(numOne, numTwo);
+        numOne = division(numOne, numTwo).toString();
+    } else if (subtract) {
+        userInput.value = subtraction(numOne, numTwo);
+        numOne = subtraction(numOne, numTwo).toString();
+    } else if (multiply) {
+        userInput.value = multiplication(numOne, numTwo);
+        numOne = multiplication(numOne, numTwo).toString();
     }
+    numTwo = "0";
+    add = false;
+    subtract = false;
+    divide = false;
+    multiply = false;
+    first = false;
+})
+
+divisionBtn.addEventListener('click', () => {
+    divide = true;
+    userInput.value = "/";
+    first = true;
+    init = true;
+})
+
+multiplicationBtn.addEventListener('click', () => {
+    multiply = true;
+    userInput.value = "*";
+    first = true;
+    init = true;
+})
+
+subtractionBtn.addEventListener('click', () => {
+    subtract = true;
+    userInput.value = "-";
+    first = true;
     init = true;
 })
 
