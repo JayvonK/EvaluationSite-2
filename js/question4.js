@@ -22,13 +22,14 @@ let userInput = document.getElementById("userInput");
 let numOne = 0;
 let numTwo = 0;
 let first = false;
+let dot = false;
 
 ACBtn.addEventListener('click', () => {
     numOne = 0;
     numTwo = 0;
     first = true;
     userInput.value = 0;
-    
+    dot = false;
 })
 
 oneBtn.addEventListener('click', () => {
@@ -39,6 +40,114 @@ oneBtn.addEventListener('click', () => {
     } else {
         numTwo = 1;
         userInput.value = 1;
+        first = false;
+    }
+})
+
+twoBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 2;
+        userInput.value = 2;
+        first = true;
+    } else {
+        numTwo = 2;
+        userInput.value = 2;
+        first = false;
+    }
+})
+
+threeBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 3;
+        userInput.value = 3;
+        first = true;
+    } else {
+        numTwo = 3;
+        userInput.value = 3;
+        first = false;
+    }
+})
+
+fourBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 4;
+        userInput.value = 4;
+        first = true;
+    } else {
+        numTwo = 4;
+        userInput.value = 4;
+        first = false;
+    }
+})
+
+fiveBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 5;
+        userInput.value = 5;
+        first = true;
+    } else {
+        numTwo = 5;
+        userInput.value = 5;
+        first = false;
+    }
+})
+
+sixBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 6;
+        userInput.value = 6;
+        first = true;
+    } else {
+        numTwo = 6;
+        userInput.value = 6;
+        first = false;
+    }
+})
+
+sevenBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 7;
+        userInput.value = 7;
+        first = true;
+    } else {
+        numTwo = 7;
+        userInput.value = 7;
+        first = false;
+    }
+})
+
+eightBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 8;
+        userInput.value = 8;
+        first = true;
+    } else {
+        numTwo = 8;
+        userInput.value = 8;
+        first = false;
+    }
+})
+
+nineBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 9;
+        userInput.value = 9;
+        first = true;
+    } else {
+        numTwo = 9;
+        userInput.value = 9;
+        first = false;
+    }
+})
+
+zeroBtn.addEventListener('click', () => {
+    if(!first){
+        numOne = 0;
+        userInput.value = 0;
+        first = true;
+    } else {
+        numTwo = 0;
+        userInput.value = 0;
         first = false;
     }
 })
