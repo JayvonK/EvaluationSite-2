@@ -37,10 +37,16 @@ oneBtn.addEventListener('click', () => {
         numOne = 1;
         userInput.value = 1;
         first = true;
+        if(dot){
+            userInput.value += 1;
+        }
     } else {
         numTwo = 1;
         userInput.value = 1;
         first = false;
+        if(dot){
+            userInput.value += 1;
+        }
     }
 })
 
@@ -49,10 +55,16 @@ twoBtn.addEventListener('click', () => {
         numOne = 2;
         userInput.value = 2;
         first = true;
+        if(dot){
+            userInput.value += 2;
+        }
     } else {
         numTwo = 2;
         userInput.value = 2;
         first = false;
+        if(dot){
+            userInput.value += 2;
+        }
     }
 })
 
@@ -61,10 +73,16 @@ threeBtn.addEventListener('click', () => {
         numOne = 3;
         userInput.value = 3;
         first = true;
+        if(dot){
+            userInput.value += 3;
+        }
     } else {
         numTwo = 3;
         userInput.value = 3;
         first = false;
+        if(dot){
+            userInput.value += 3;
+        }
     }
 })
 
@@ -73,10 +91,16 @@ fourBtn.addEventListener('click', () => {
         numOne = 4;
         userInput.value = 4;
         first = true;
+        if(dot){
+            userInput.value += 4;
+        }
     } else {
         numTwo = 4;
         userInput.value = 4;
         first = false;
+        if(dot){
+            userInput.value += 4;
+        }
     }
 })
 
@@ -85,10 +109,16 @@ fiveBtn.addEventListener('click', () => {
         numOne = 5;
         userInput.value = 5;
         first = true;
+        if(dot){
+            userInput.value += 5;
+        }
     } else {
         numTwo = 5;
         userInput.value = 5;
         first = false;
+        if(dot){
+            userInput.value += 5;
+        }
     }
 })
 
@@ -97,10 +127,16 @@ sixBtn.addEventListener('click', () => {
         numOne = 6;
         userInput.value = 6;
         first = true;
+        if(dot){
+            userInput.value += 6;
+        }
     } else {
         numTwo = 6;
         userInput.value = 6;
         first = false;
+        if(dot){
+            userInput.value += 6;
+        }
     }
 })
 
@@ -109,10 +145,16 @@ sevenBtn.addEventListener('click', () => {
         numOne = 7;
         userInput.value = 7;
         first = true;
+        if(dot){
+            userInput.value += 7;
+        }
     } else {
         numTwo = 7;
         userInput.value = 7;
         first = false;
+        if(dot){
+            userInput.value += 7;
+        }
     }
 })
 
@@ -121,10 +163,16 @@ eightBtn.addEventListener('click', () => {
         numOne = 8;
         userInput.value = 8;
         first = true;
+        if(dot){
+            userInput.value += 8;
+        }
     } else {
         numTwo = 8;
         userInput.value = 8;
         first = false;
+        if(dot){
+            userInput.value += 8;
+        }
     }
 })
 
@@ -133,10 +181,16 @@ nineBtn.addEventListener('click', () => {
         numOne = 9;
         userInput.value = 9;
         first = true;
+        if(dot){
+            userInput.value += 9;
+        }
     } else {
         numTwo = 9;
         userInput.value = 9;
         first = false;
+        if(dot){
+            userInput.value += 9;
+        }
     }
 })
 
@@ -145,9 +199,19 @@ zeroBtn.addEventListener('click', () => {
         numOne = 0;
         userInput.value = 0;
         first = true;
+        if(dot){
+            userInput.value += 0;
+        }
     } else {
         numTwo = 0;
         userInput.value = 0;
         first = false;
+        if(dot){
+            userInput.value += 0;
+        }
     }
+})
+
+decimalBtn.addEventListener('click', () => {
+    dot = true;
 })
