@@ -17,6 +17,7 @@ let additionBtn = document.getElementById("additionBtn");
 let zeroBtn = document.getElementById("zeroBtn");
 let decimalBtn = document.getElementById("decimalBtn");
 let equalsBtn = document.getElementById("equalsBtn");
+let userInput = document.getElementById("userInput")
 
 let numOne = 0;
 let numTwo = 0;
