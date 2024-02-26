@@ -143,11 +143,11 @@ oneBtn.addEventListener('click', () => {
     } else {
         if (init) {
             numTwo = "1";
-            userInput.value = numTwo;
+            userInput.value += numTwo;
             init = false;
         } else {
             numTwo += "1";
-            userInput.value = numTwo;
+            userInput.value += numTwo;
         }
     }
 })
@@ -165,11 +165,11 @@ twoBtn.addEventListener('click', () => {
     } else {
         if (init) {
             numTwo = "2";
-            userInput.value = numTwo;
+            userInput.value += "2";
             init = false;
         } else {
             numTwo += "2";
-            userInput.value = numTwo;
+            userInput.value += "2";
         }
     }
 })
