@@ -73,28 +73,28 @@ equalsBtn.addEventListener('click', () => {
 
 divisionBtn.addEventListener('click', () => {
     divide = true;
-    userInput.value = "/";
+    userInput.value += "/";
     first = true;
     init = true;
 })
 
 multiplicationBtn.addEventListener('click', () => {
     multiply = true;
-    userInput.value = "*";
+    userInput.value += "*";
     first = true;
     init = true;
 })
 
 subtractionBtn.addEventListener('click', () => {
     subtract = true;
-    userInput.value = "-";
+    userInput.value += "-";
     first = true;
     init = true;
 })
 
 additionBtn.addEventListener('click', () => {
     add = true;
-    userInput.value = "+";
+    userInput.value += "+";
     first = true;
     init = true;
 })
@@ -160,7 +160,7 @@ twoBtn.addEventListener('click', () => {
             init = false
         } else {
             numOne += "2";
-            userInput.value = numOne;
+            userInput.value += numOne;
         }
     } else {
         if (init) {
